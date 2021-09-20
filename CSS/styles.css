@@ -1,0 +1,142 @@
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+} */
+
+body{
+    height: 100%;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: #666;
+    font-family: 'Merriweather', serif;
+}
+
+.pimg1,.pimg2,.pimg3{
+    position: relative;
+    opacity: 0.60;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image: url(images/image1.jpg);
+    min-height: 800px;
+}
+
+.pimg2{
+    background-image: url(images/image2.jpg);
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image: url(images/image3.jpg);
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding: 60px 80px;
+}
+
+.section p{
+    margin: auto;
+    width: 70%;
+    line-height: 2;
+}
+
+.light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 25px;
+}
+
+.ptext .border.trans{
+    background-color:transparent;
+}
+
+  @media(max-width:600px){
+    .pimg1, .pimg2, .pimg3{
+      background-attachment:scroll;
+    }
+  }
+
+button{
+    color: white;
+    background-color: #111;
+    border: 4px solid;
+    border-radius: 10px;
+    font-size: 40px;
+    padding: 15px 40px;
+    transition: all 0.5s;
+}
+
+button:hover{
+    border-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: rgb(253, 2, 2);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
